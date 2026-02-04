@@ -8,7 +8,7 @@
 <body>
     <?php
 echo "<h1>Operatory</h1>";
-$a=5;
+$a=5; 
 $b="napis";
 $c=7;
 $d="7";
@@ -55,6 +55,13 @@ $g=false;
 
 echo "spojnik lub(f||g) wynik:".($f||$g)."<br>";
 echo "spojnik lub(f&&g) wynik:".($f&&$g)."<br>";
+
+
+$a1=100;
+$a2=10;
+$a3=152;
+$wynik22=($a3/$a1);
+echo"$a3:$a1= ".($wynik22);
     ?>
 </body>
 </html>
