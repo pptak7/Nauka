@@ -35,6 +35,7 @@ echo "porownanie a != c to: ".$wynik."<br>";
 $wynik=($a===$d);
 echo "porownanie a === d to: ".$wynik."<br>";
 
+
     ?>
 </body>
 </html>
