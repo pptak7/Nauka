@@ -54,6 +54,7 @@ $f=true;
 $g=false;
 
 echo "spojnik lub(f||g) wynik:".($f||$g)."<br>";
+echo "spojnik lub(f&&g) wynik:".($f&&$g)."<br>";
     ?>
 </body>
 </html>
