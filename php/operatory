@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>operatory</title>
 </head>
 <body>
     <?php
@@ -21,7 +21,7 @@ echo "d= ".$d."<br>";
 $wynik;
 
 $wynik=($a<$c);
-echo "porownanie a < c to: ".$wynik."<br>";
+echo "porownanie a < c to: ".$wynik."<br>"; 
 $wynik=($a<=$c);
 echo "porownanie a <= c to: ".$wynik."<br>";
 $wynik=($a>$c);
