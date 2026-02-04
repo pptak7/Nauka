@@ -35,7 +35,19 @@ echo "porownanie a != c to: ".$wynik."<br>";
 $wynik=($a===$d);
 echo "porownanie a === d to: ".$wynik."<br>";
 
+$z1=60;
+$z2=68;
+$z3=21;
 
+$porowananie;
+$porowananie($z1<$z3);
+echo "porownainie z1 < z3 to: ".$porowananie."<br>";
+
+$porowananie($z3<=$z1);
+echo "porownainie z3 <= z1 to: ".$porowananie."<br>";
+
+$porowananie($z2>=$z3);
+echo "porownainie z2 >= z3 to: ".$porowananie."<br>";
     ?>
 </body>
 </html>
