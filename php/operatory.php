@@ -48,6 +48,12 @@ echo "porownainie z3 <= z1 to: ".$porowananie."<br>";
 
 $porowananie=($z2>=$z3);
 echo "porownainie z2 >= z3 to: ".$porowananie."<br>";
+
+
+$f=true;
+$g=false;
+
+echo "spojnik lub(f||g) wynik:".($f||$g)."<br>";
     ?>
 </body>
 </html>
