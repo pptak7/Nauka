@@ -22,6 +22,22 @@ wypisz.innerHTML+="a+b= "+(a+b);
 wypisz.innerHTML+="<br>";
 wypisz.innerHTML+="c+d= "+(c+d);
 console.log("cos");
+
+
+var wypisz = document.getElementById("wynik");
+var a=10;
+if (a<0)
+{
+    wypisz.innerHTML="a jest ujemne i wynosi"+ a;
+}
+else if (a>0)
+{
+    wypisz.innerHTML="a jest dodatnie i wynosi"+ a;
+}
+else
+{
+    wypisz.innerHTML="a jest rowne zero";
+}
     </script>
 </body>
 </html>
