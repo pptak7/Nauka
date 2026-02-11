@@ -39,7 +39,7 @@ $suma+=$l;
 $l++;
 }
 echo"suma=".$suma;
-echo"test";
+echo"test";sad
 
 ?>
 </body>
