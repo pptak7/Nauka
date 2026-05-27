@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 1</title>
+</head>
+<body>
+
+    <h2>Kalkulator kosztu paliwa</h2>
+    
+    <label for="litry">Ilość litrów:</label>
+    <input type="number" id="litry"><br><br>
+
+    <label for="rodzaj">Rodzaj paliwa (1-benzyna, 2-diesel):</label>
+    <input type="number" id="rodzaj"><br><br>
+
+    <button onclick="obliczKoszt()">Oblicz</button>
+
+    <p id="wynikZad1" style="margin-top: 20px; font-weight: bold;"></p>
+
+    <script>
+        function obliczKoszt() {
+            var litry = document.getElementById('litry').value;
+            var rodzaj = document.getElementById('rodzaj').value;
+            var wynik = document.getElementById('wynikZad1');
+
+            var nazwaPaliwa = "";
+            var koszt = 0;
+
+            if (rodzaj == 1) {
+                nazwaPaliwa = "benzyna";
+                koszt = litry * 5.8;
+            } else if (rodzaj == 2) {
+                nazwaPaliwa = "diesel";
+                koszt = litry * 6.2;
+            } else {
+                nazwaPaliwa = "nieznany";
+                koszt = 0;
+            }
+
+            wynik.innerHTML = "Tankowane paliwo to: " + nazwaPaliwa + "<br>Koszt paliwa wynosi: " + koszt + " zł";
+        }
+    </script>
+
+
+
+
+   <h2>Obliczanie przeciwprostokątnej c</h2>
+    
+    <label for="liczbaA">Liczba a:</label>
+    <input type="number" id="liczbaA"><br><br>
+
+    <label for="liczbaB">Liczba b:</label>
+    <input type="number" id="liczbaB"><br><br>
+
+    <button onclick="obliczC()">Oblicz c</button>
+
+    <p id="wynikZad2" style="margin-top: 20px; font-weight: bold;"></p>
+
+    <script>
+        function obliczC() {
+            var a = document.getElementById('liczbaA').value;
+            var b = document.getElementById('liczbaB').value;
+            var wynik = document.getElementById('wynikZad2');
+
+            if (a > 0 && b > 0) {
+                var c = Math.sqrt((a * a) + (b * b));
+                wynik.innerHTML = "Wartość zmiennej c wynosi: " + c;
+            } else {
+                wynik.innerHTML = "Liczby a oraz b muszą być dodatnie";
+            }
+        }
+    </script>
+
+
+
+
+</body>
+</html>
